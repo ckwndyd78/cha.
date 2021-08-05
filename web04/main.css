@@ -1,0 +1,186 @@
+/*나중에 인덱스02랑 같이 둘것 링크도 다시 잡을것*/
+/* .section {text-align: center;}
+.section.on {text-align: center; font-size: 100px; transition: 1s;} */
+
+h1 {position: fixed; top: 50px; left: 50px; z-index: 999;}
+.xi-bars {position: fixed; top: 50px; right: 50px; font-size: 24px; z-index: 999;}
+
+nav {position: fixed; top: 50%; right: 50px;transform: translateY(-50%);  z-index: 999;}
+nav ul{width: 50px;}
+nav ul li a {display: block; height: 20px; text-indent: -9999px; position: relative;}
+nav ul li a:after {content: "";display: block; width: 50%; height: 3px; background: #333;
+position: absolute; top: 9px;right: 0; transition: 0.4s;} 
+nav ul li.on a:after {width: 100%;}
+
+
+.intro .video_case{width: 100%; height: 100vh;overflow: hidden;opacity: 0.7;}
+
+.intro .video_case video{width: 2000px; }
+.intro .intro_slogan{position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%);text-align: center; color: #f2f2f2;}
+.intro .intro_slogan h2 {font-size: 50px; text-shadow: 2px 1px #333; transform: translateY(100px); opacity: 0; transition: 1s;}
+.intro .intro_slogan p {font-size: 30px; text-shadow: 2px 1px #333; transform: translateY(100px); opacity: 0; transition: 1s;}
+
+.intro .intro_slogan h2{transform: translateY(0); opacity: 1; transition: 1s 1s;}
+.intro .intro_slogan p {transform: translateY(0); opacity: 1; transition: 1s 1.5s;}
+
+
+
+.portfolio01 .container .video_case {background: url(./baimg.png); }
+
+
+.section {background: #333;  }
+.section .container {display: flex; width: 1300px; margin: 0 auto;}
+.section .container>* {flex: 1; padding: 0 25px;}
+.section .container video {width: 100%; }
+.section .container h2 {font-size: 50px;letter-spacing: 0.25em; padding: 60px 0 0 0;}
+.section .container p {font-weight: 100; line-height: 1.4; margin-bottom: 24px;}
+.section .container ul {font-weight: 100; line-height: 1.4;}
+
+.section .color {display: flex;}
+.section .color span {display: inline-block; width: 10px; height: 10px;
+border-radius: 50%; background: #fff; margin-right: 5px;}
+.section .color span.ff0000 {background: #ff0000}
+.section .color span.ffff00 {background: #ffff00}
+.section .color span.blue {background: #336699}
+
+.section .txt span i {font-size: 24px; padding: 10px; background: #f2f2f2;
+margin-right: 10px;border-radius: 50%;}
+
+.section .txt h3 {color: #f2f2f2; font-size: 20px; font-weight: 500; margin-bottom: 14px; text-transform: uppercase;}
+.section .txt a {display: block; width: 100px; line-height: 30px; text-align: center; border: 1px solid red;}
+.section .txt .font {display: flex;}
+.section .txt .font li {margin-right: 20px;}
+
+.section .web {display: block; border: 1px dashed #fff;padding: 20px; border-radius: 30px;}
+.section .video_case {background: url(/baimg.png);padding: 30px;}
+.section .video_case video {border-radius: 5%;}
+.section .video_case:before {content:"" ; display: block; width: 100px; height: 100px;
+border-radius: 50%;background: rgba(red, green, blue, alpha); position: absolute; top: -30px;left: -30px;}
+.section .video_case:before {content:"" ; display: block; width: 100px; height: 100px;
+    border-radius: 50%;background: rgba(red, green, blue, alpha); position: absolute; top: -50px;left: -50px;}
+
+.section .web_case {height: 400px; overflow: hidden;}
+.section .web_case img {width: 100px; position: relative;}
+.section .web_case:hover ing {transform: translateY(calc(-100% + 400px)); transition: 0.4s;}
+
+.section .visual_slider {width: 1300px; margin: 0 auto; z-index: 3;}
+.section .visual_slide figure {padding: 0 25px;}
+.section .visual_slider img {width: 100%;}
+
+
+.section .slider_arrows i {position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);
+font-size: 200px;z-index: 2;}
+
+
+.section .slider_arrows i .right {margin-left: 700px;transform: translate(-50%,-50%) rotate (45deg);}
+.section .slider_arrows i .left {margin-left: -700px; transform: translate(-50%,-50%) rotate (-135deg);}
+
+
+.section .visual_slider .slick-dots {display: flex; justify-content: center;}
+.section .visual_slider .slick-dots li {width: 15px;height: 10px; background: rgba(255, 0, 0, 0.5); border-radius: 5px; margin: 20px 4px; }
+.section .visual_slider .slick-dots button {display: none;}
+.section .visual_slider .slick-dots li.slick-active {background-color: rgba(0, 0, 155, 0.5);}
+
+
+
+/* .section .video_case iframe {border-radius: 10px;} */
+
+footer address {position: fixed; bottom: 50px; left: 50px; font-size: 24px; z-index: 999;}
+footer .to_top{position: fixed; bottom: 50px; right: 50px; font-size: 24px; z-index: 999;}
+
+/*모바일 환경*/
+
+@media (max-width:768px){
+    h1 {position: fixed; top: 50px; left: 50px; z-index: 999;}
+.xi-bars {position: fixed; top: 50px; right: 50px; font-size: 24px; z-index: 999;}
+
+nav {display: none; position: fixed; top: 50%; right: 30px;transform: translateY(-50%);  z-index: 999;}
+nav ul{width: 30px;}
+nav ul li a {display: block; height: 20px; text-indent: -9999px; position: relative;}
+nav ul li a:after {content: "";display: block; width: 10px; height: 10px; background: #333;
+position: absolute; top: 9px;right: 0; transition: 0.4s;} 
+nav ul li.on a:after {width: 100%;}
+
+
+.intro .video_case{width: 100%; height: 100vh;overflow: hidden;opacity: 0.7;}
+
+.intro .video_case video{width: auto; height: 100vh; }
+.intro .intro_slogan{position: absolute; top: 50%; left: 50%; transform:translate(-50%,-50%);text-align: center; color: #f2f2f2;
+}
+.intro .intro_slogan h2 {font-size: 30px; text-shadow: 2px 1px #333; transform: translateY(100px); opacity: 0; transition: 1s;}
+.intro .intro_slogan p {font-size: 20px; text-shadow: 2px 1px #333; transform: translateY(100px); opacity: 0; transition: 1s;}
+
+.intro .intro_slogan h2{transform: translateY(0); opacity: 1; transition: 1s 1s;}
+.intro .intro_slogan p {transform: translateY(0); opacity: 1; transition: 1s 1.5s;}
+
+
+
+.portfolio01 .container .video_case {background: url(./baimg.png); }
+
+
+.section {background: #333;  }
+.section .container {display: flex; flex-direction: column; width: auto; margin: 0 auto;}
+.section .container>* {flex: 1; padding: 0 25px;}
+.section .container video {width: 100%; }
+.section .container h2 {font-size: 50px;letter-spacing: 0.25em; padding: 60px 0 0 0;}
+.section .container p {font-weight: 100; line-height: 1.4; margin-bottom: 24px;}
+.section .container ul {font-weight: 100; line-height: 1.4;}
+
+.section .color {display: flex;}
+.section .color span {display: inline-block; width: 10px; height: 10px;
+border-radius: 50%; background: #fff; margin-right: 5px;}
+.section .color span.ff0000 {background: #ff0000}
+.section .color span.ffff00 {background: #ffff00}
+.section .color span.blue {background: #336699}
+
+.section .txt span i {font-size: 24px; padding: 10px; background: #f2f2f2;
+margin-right: 10px;border-radius: 50%;}
+
+.section .txt h3 {color: #f2f2f2; font-size: 20px; font-weight: 500; margin-bottom: 14px; text-transform: uppercase;}
+.section .txt a {display: block; width: 100px; line-height: 30px; text-align: center; border: 1px solid red;}
+.section .txt .font {display: flex;}
+.section .txt .font li {margin-right: 20px;}
+
+.section .web {display: block; border: 1px dashed #fff;padding: 20px; border-radius: 30px;}
+.section .video_case {background: url(/baimg.png);padding: 30px;}
+.section .video_case video {border-radius: 5%;}
+.section .video_case:before {content:"" ; display: block; width: 100px; height: 100px;
+border-radius: 50%;background: rgba(red, green, blue, alpha); position: absolute; top: -30px;left: -30px;}
+.section .video_case:before {content:"" ; display: block; width: 100px; height: 100px;
+    border-radius: 50%;background: rgba(red, green, blue, alpha); position: absolute; top: -50px;left: -50px;}
+
+.section .web_case {height: 400px; overflow: hidden;}
+.section .web_case img {width: 100px; position: relative;}
+.section .web_case:hover ing {transform: translateY(calc(0)); transition: 0.4s;}
+
+
+.portfolio03 .txt color {display: none;}
+.portfolio03 .txt font {display: none;}
+.portfolio03 .txt h3 {display: none;}
+
+
+.section .visual_slider {width: auto; margin: 0 auto; z-index: 3;}
+.section .visual_slide figure {padding: 0 25px;}
+.section .visual_slider img {width: 100%;}
+
+
+.section .slider_arrows i {position: absolute; top: 50%;left: 50%;transform: translate(-50%,-50%);
+font-size: 200px;z-index: 2;}
+
+
+.section .slider_arrows i .right {margin-left: 0;transform: translate(-50%,-50%) rotate (45deg); right: 30px;z-index: 5;}
+.section .slider_arrows i .left {margin-left: 0; transform: translate(-50%,-50%) rotate (-135deg); left: 30px;z-index: 5;}
+
+
+.section .visual_slider .slick-dots {display: flex; justify-content: center;}
+.section .visual_slider .slick-dots li {width: 15px;height: 10px; background: rgba(255, 0, 0, 0.5); border-radius: 5px; margin: 20px 4px; }
+.section .visual_slider .slick-dots button {display: none;}
+.section .visual_slider .slick-dots li.slick-active {background-color: rgba(0, 0, 155, 0.5);}
+
+
+
+/* .section .video_case iframe {border-radius: 10px;} */
+
+footer address {position: fixed; bottom: 50px; left: 50px; font-size: 24px; z-index: 999;}
+footer .to_top{position: fixed; bottom: 50px; right: 50px; font-size: 24px; z-index: 999;}
+}
